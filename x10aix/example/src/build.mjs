@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-const webMode=process.argv.includes('--web');
-const {anatomyFigure,motion}=await import(webMode?'./figure-web.mjs':'./figure-video.mjs');
+const detailed=process.argv.includes('--detailed');
+const {anatomyFigure,motion}=await import(detailed?'./figure-web.mjs':'./figure-video.mjs');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const write=(p,s)=>fs.writeFileSync(path.join(root,p),s);

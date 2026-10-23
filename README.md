@@ -7,7 +7,7 @@ Schlanker Fork von [wheresryan22/anatomy](https://github.com/wheresryan22/anatom
 ## Zwei Modi
 
 - **Videoeinblendung:** wenige große Funktionsgruppen, deterministische Zeitsteuerung, optional transparenter ProRes-Export. Bei 480 × 270 prüfen.
-- **Web-Erklärer:** mehr erklärender Detailgrad, interaktive Zustände, Pause, Tastatur und reduzierte Bewegung.
+- **Web-Erklärer:** dieselbe kompakte Bauform, interaktive Zustände, Pause, Tastatur und reduzierte Bewegung.
 
 Einstieg: [SKILL.md](SKILL.md). Die pauschale Detailpflicht des Originals wird durch Lesbarkeit im Ausgabemedium ersetzt. Geometrieprüfungen bleiben erhalten.
 
@@ -23,7 +23,7 @@ npm run check
 node scripts/serve.mjs
 ```
 
-`http://127.0.0.1:4790/` öffnen. Für die ausführliche Variante `npm run build:web` ausführen und neu laden. Zurück mit `npm run build:video`. Der Build ersetzt nur generierte Beispielausgaben. Das Beispiel simuliert fünf Schritte der Dokumentprüfung; erst nach menschlicher Prüfung erfolgt die Freigabe.
+`http://127.0.0.1:4790/` öffnen. `npm run build:web` verwendet dieselbe kompakte Maschine mit interaktiver Schrittwahl, Pause und Zeitleiste. Die kompakte Bauform ist der Standard für beide Modi (Nutzerentscheidung 2026-10-23). Nur auf ausdrücklichen Wunsch erzeugt `npm run build:web:detailed` die ausführliche Variante. Zurück mit `npm run build:video` oder `npm run build:web`. Der Build ersetzt nur generierte Beispielausgaben. Das Beispiel simuliert fünf Schritte der Dokumentprüfung; erst nach menschlicher Prüfung erfolgt die Freigabe.
 
 Ausgaben: `example/web-anatomy.html`, einfacher Ablauf als Vergleich und HyperFrames-Kompositionen unter `example/film-anatomy/` und `example/film-einfach/`. Keine externen CDNs im Browser. GSAP über Lockfile, lokale Schriften mit Lizenz.
 
@@ -48,3 +48,4 @@ Upstream-Pin: `1482e8469b0a9e0d8cc18ea2740a01423d29ae80`. `kit/` bleibt byteglei
 Versionierte [CI-Referenz](x10aix/references/ci-retro-scifi.md): Stand 2026-10-23. Markenänderungen im zentralen Leitfaden und hier gemeinsam pflegen. [Original-README](x10aix/upstream/README.md) und [Original-Skill](x10aix/upstream/SKILL.md) dokumentieren die Herkunft.
 
 Anatomy: Copyright Ryan, MIT, siehe [LICENSE](LICENSE). x10aix-spezifischer Code und Dokumentation: Copyright 2026 X10AIX GmbH, ebenfalls MIT. Fonts und GSAP besitzen eigene Lizenzbedingungen; siehe `x10aix/example/assets/OFL-*.txt` und die installierte GSAP-Lizenz. Keine behauptete Verbindung mit den genannten Spieleherstellern.
+

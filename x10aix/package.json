@@ -6,6 +6,7 @@
   "scripts": {
     "build:video": "node example/src/build.mjs",
     "build:web": "node example/src/build.mjs --web",
+    "build:web:detailed": "node example/src/build.mjs --web --detailed",
     "check": "node scripts/check.mjs"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 ---
 name: x10aix-anatomy
-description: Erstellt isometrische x10aix-Erkläranimationen in Leiterbahn- und Retro-Sci-Fi-CI, als kompakte Videoeinblendung oder ausführlichen interaktiven Web-Erklärer. Nutzt das unveränderte Anatomy-Geometrie-Kit mit eigener Gestaltung und deterministischer Videozeitsteuerung.
+description: Erstellt isometrische x10aix-Erkläranimationen in Leiterbahn- und Retro-Sci-Fi-CI, als kompakte Videoeinblendung oder interaktiven Web-Erklärer mit standardmäßig derselben kompakten Bauform. Nutzt das unveränderte Anatomy-Geometrie-Kit mit eigener Gestaltung und deterministischer Videozeitsteuerung.
 license: MIT
 compatibility: Node.js 22+, Chrome oder Chromium für Browserprüfungen. Videoexport benötigt HyperFrames und FFmpeg; reine Web-Erklärer nicht.
 ---
@@ -15,7 +15,7 @@ Dieser Einstieg ersetzt die gestalterischen und Größenregeln des Original-Skil
 | Einblendung über Video, kurzer Clip, freigestelltes Objekt, kleines Motiv | **Videoeinblendung** | [video-insert.md](x10aix/references/video-insert.md) |
 | Website, nutzergesteuerter Ablauf, größere interaktive Darstellung | **Web-Erklärer** | [web-explainer.md](x10aix/references/web-explainer.md) |
 
-Leite den Modus aus dem Auftrag ab. Sind beide Ausgaben beauftragt, verwende dasselbe Zustandsmodell mit angepasstem Detailgrad. Ist das Ausgabemedium unklar und entscheidend, frage gezielt danach. Keine universelle Mindestzahl von Teilen; Verständlichkeit bei der Zielgröße entscheidet.
+Leite den Modus aus dem Auftrag ab. Sind beide Ausgaben beauftragt, verwende dasselbe Zustandsmodell und standardmäßig dieselbe kompakte Bauform. Die Modi unterscheiden sich durch Ausgabe und Bedienung: Video als seekbare Einblendung, Web mit interaktiver Schrittwahl. Mehr mechanische Details nur auf ausdrücklichen Wunsch; größere Webfläche ist allein kein Grund dafür (Nutzerentscheidung 2026-10-23). Ist das Ausgabemedium unklar und entscheidend, frage gezielt danach. Keine universelle Mindestzahl von Teilen; Verständlichkeit bei der Zielgröße entscheidet.
 
 ## Gemeinsamer Ablauf
 
@@ -28,7 +28,7 @@ Leite den Modus aus dem Auftrag ab. Sind beide Ausgaben beauftragt, verwende das
 
 ## Referenz und Grenzen
 
-`x10aix/example/src/figure-video.mjs`: kompakte Retro-Sci-Fi-Maschine. `figure-web.mjs`: ausführlichere Fassung. Zwölf Teile im Beispiel sind kein allgemeines Limit. [README](README.md) beschreibt Aufbau und Vorschau.
+`x10aix/example/src/figure-video.mjs`: kompakte Retro-Sci-Fi-Maschine. `figure-web.mjs`: optionale ausführlichere Fassung, nur auf ausdrücklichen Wunsch. Auch der Web-Erklärer nutzt standardmäßig `figure-video.mjs`. Zwölf Teile im Beispiel sind kein allgemeines Limit. [README](README.md) beschreibt Aufbau und Vorschau.
 
 `x10aix/upstream/SKILL.md` dokumentiert Herkunft und ist kein zweiter gleichzeitig geltender Skill. Keine automatische Gallery-Veröffentlichung. Publizieren, Kundenmaterial übertragen oder einen produktiven Webauftritt ändern nur im beauftragten Umfang.
 

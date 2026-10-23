@@ -70,3 +70,5 @@ Von Michael am 2026-10-23 als Grundlage für zukünftige x10aix-Animationen best
 
 
 Referenz: `../example-retro.png` und `../example/src/figure-video.mjs`.
+
+Standard der Maschinenbauform (Nutzerentscheidung 2026-10-23): kompakt für Video und Web. Im Web kommt interaktive Schrittwahl hinzu; detaillierte Mechanik nur auf ausdrücklichen Wunsch.

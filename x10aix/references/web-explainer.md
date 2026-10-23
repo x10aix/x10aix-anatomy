@@ -1,6 +1,8 @@
 # Modus Web-Erklärer
 
-Die größere Fläche darf Funktionszusammenhänge ausführlicher zeigen. Details dienen der Erklärung; keine Mindestteilzahl, keine Pflicht zum Füllen freier Flächen. Referenz: `../example/src/figure-web.mjs`.
+Standard seit Nutzerentscheidung 2026-10-23: dieselbe kompakte Retro-Sci-Fi-Maschine wie für Videoeinblendungen, ergänzt um interaktive Schrittwahl. Referenz: `../example/src/figure-video.mjs`. Größere Webfläche rechtfertigt keine zusätzlichen mechanischen Teile. Zustände und Erklärungstexte vertiefen die Erklärung.
+
+`npm run build:web` baut die kompakte Standardfassung. Nur auf ausdrücklichen Wunsch: `npm run build:web:detailed` verwendet die erhaltene Detailvariante `figure-web.mjs`. Keine Mindestteilzahl.
 
 - CI: `ci-retro-scifi.md`. Gleiche Leiterbahnfläche, warm-dunkle Gehäuse und funktionale Akzente; bei neuen Objekten Pixelstatus und abgeschrägte Formen passend einsetzen.
 - Verständliche Zustände, Schrittwahl, Pause/Neustart und Tastaturbedienung anbieten. Reduzierte Bewegung durch ruhige Einzelzustände respektieren, beim Verlassen der Seite pausieren.
