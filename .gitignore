@@ -1,4 +1,8 @@
 node_modules/
+/x10aix/example/web-*.html
+/x10aix/example/film-*/
+/x10aix/example/assets/gsap.min.js
+/x10aix/example/src/teileliste.json
 .DS_Store
 *.log
 npm-debug.log*

@@ -1,0 +1,30 @@
+/* Volltest 2026-10-23: Inter is a trial, not a blanket approval. */
+@font-face{font-family:Inter;src:url('assets/inter400.woff2') format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Inter;src:url('assets/inter700.woff2') format('woff2');font-weight:700;font-display:block}
+:root{--ci-ui:Inter,sans-serif;--ci-inset:#0a0807;--ci-quiet:#2a231c;--ci-label:#a8c8e8;--x-establish:#00bcd4;--x-amber:#e8a030;--x-ink-bright:#e8d4a0}
+html,body{font-family:Inter,sans-serif}#root{padding:48px 64px 28px;gap:26px}
+.frame-bg:after{background-image:url('assets/circuit-still.png');background-size:100% auto;background-repeat:no-repeat}
+.masthead,.intro,footer{background:#14110e}.brand{font-size:52px}.edition{font-size:26px}.eyebrow{font-size:28px}h1{font-size:72px;line-height:1.14;font-weight:700}
+.workarea{margin-top:36px;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:40px}
+.film .workarea{flex:0 0 598px;height:598px}
+.machine-panel,.readout{position:relative;background:var(--ci-inset);border:1px solid var(--ci-quiet);border-radius:0 14px 14px 14px;box-shadow:inset 0 0 14px rgba(0,0,0,.85);overflow:visible}
+.panel-top{display:contents}.panel-top>span:first-child,.readout-tab{position:absolute;left:-1px;top:-37px;height:37px;background:var(--ci-inset);border:1px solid var(--ci-quiet);border-bottom:0;border-radius:8px 8px 0 0;padding:7px 20px 5px;font:26px/1 VT323,monospace;letter-spacing:2px;color:var(--ci-label)}
+.panel-top>span:last-child{position:absolute;right:22px;top:20px;font:22px VT323,monospace;color:#c4b59a;letter-spacing:1px}
+.illustration{padding:40px 22px 4px}.film .illustration{height:490px}.machine-caption{font-size:22px;padding:15px 24px 20px}
+.readout{padding:24px 28px}.phase-number{color:#e8a030;font-size:80px;margin-bottom:16px}.phase-label{font-size:26px}.phase h2{font-size:48px;font-weight:700;line-height:1.18;margin:14px 0 18px}.phase p{font-size:28px;line-height:1.45}.rule{margin-top:10px;padding-left:18px}.rule p{font-size:25px;line-height:1.35}.rule span{font-size:23px}
+footer{font-size:20px}.progress{background:#2a231c}.progress div{background:#e8a030}
+.simple-svg text{font-family:Inter,sans-serif;font-size:24px}
+button{font-family:Inter,sans-serif;position:relative;min-height:46px;padding-right:34px;font-weight:400}button:after{content:'›';position:absolute;right:12px;top:50%;transform:translateY(-50%);font:24px VT323,monospace;color:#7dd3e8}button:hover,button[aria-pressed=true]{background:#231d18;color:#d4c5a9;border-color:#7dd3e8;box-shadow:0 0 12px rgba(125,211,232,.18)}button:focus-visible{outline:2px solid #a8c8e8}
+.web #root{gap:24px}.web .workarea{margin-top:28px;gap:28px}.web .panel-top>span:first-child,.web .readout-tab{height:29px;top:-29px;font-size:20px;padding:5px 12px;letter-spacing:1.4px}.web .panel-top>span:last-child{font-size:16px;top:14px;right:14px}.web .illustration{padding-top:34px}.web .readout{padding:20px}.web .phase h2{font-size:30px;font-weight:700}.web .phase p,.web .rule p{font-size:18px}.web .machine-caption{font-size:15px}.web footer,.web.embedded footer{font-size:14px;line-height:1.5}.web .phase-number{color:#e8a030}.web .phase-stack{min-height:260px}
+.web.embedded .workarea{gap:52px}.web.embedded .readout{padding:18px}.web.embedded .phase-stack{min-height:165px}.web.embedded .phase h2{font-size:25px;line-height:1.24}.web.embedded .phase p{font-size:17px}.web.embedded .phase-label{font-size:19px}.web.embedded .phase-number{font-size:46px}.web.embedded .phase{grid-template-columns:55px 1fr;gap:0 12px}
+.web .frame-bg:after{opacity:.5}
+.steps button{padding-right:34px!important}
+@media(max-width:700px){.web #root{padding:22px 18px}.web .workarea{gap:52px}.web h1{font-size:31px}.web .readout{padding:18px}.web .phase h2{font-size:27px}.web .phase-stack{min-height:210px}.web .machine-caption{font-size:14px;padding:12px;gap:15px}.web .panel-top>span:first-child,.web .readout-tab{font-size:18px}.web .panel-top>span:last-child{font-size:14px}.web footer{font-size:14px}.web.embedded .phase h2{font-size:23px}.web.embedded .phase p{font-size:16px}.web.embedded .phase-stack{min-height:190px}.web.embedded .phase{grid-template-columns:38px 1fr;gap:0 9px}.web.embedded .phase-number{font-size:38px}.web.embedded .readout{padding:14px}.web.embedded .machine-caption{gap:12px}}
+
+/* Leiterbahnen are the shared surface, not a frame ornament. Reading screen stays inset. */
+.machine-panel{background:transparent;box-shadow:none;border-color:transparent}
+.machine-panel .panel-top>span:first-child{background:#14110e;border-color:#4f4336}
+.frame-bg:after,.web .frame-bg:after{opacity:1}
+.machine-caption{position:relative;z-index:1;background:#14110e;align-self:flex-start;border-radius:6px}
+.illustration{position:relative;z-index:1}
+.web .frame-bg:after{background-size:960px 540px;background-position:left top;background-repeat:repeat-y}

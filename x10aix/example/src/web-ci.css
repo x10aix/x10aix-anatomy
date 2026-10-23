@@ -1,0 +1,30 @@
+/* Web-CI 2026-10-22: observed live default, not light/graphite/print variants. */
+:root{--ci-bg:#14110e;--ci-panel:#231d18;--ci-sunken:#100d0b;--ci-line:#4f4336;--ci-strong:#5f5244;--ci-text:#d4c5a9;--ci-heading:#e8d4a0;--ci-soft:#c4b59a;--ci-label:#a8c8e8;--ci-link:#7dd3e8;--ci-ui:system-ui,sans-serif}
+html,body{background:var(--ci-bg);font-family:var(--ci-ui);color:var(--ci-text)}
+.frame-bg{background:var(--ci-bg)}
+.frame-bg:after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Cg fill='none' stroke-width='1.5' opacity='.22'%3E%3Cpath stroke='%2300bcd4' d='M0 230h28l24-24v-76l25-25h130M0 760h30l24 24v166l28 28h100M1920 370h-26l-24-24V190l-24-24h-90'/%3E%3Cpath stroke='%23e8a030' d='M1560 0v28l24 24h156l24 24v75M1920 940h-28l-24 24v78l-24 24h-120'/%3E%3Cpath stroke='%23a8c8e8' d='M360 0v20l24 24h110M620 1080v-18l24-24h140'/%3E%3C/g%3E%3Cg fill='%2314110e' stroke='%236b8db8' opacity='.3'%3E%3Ccircle cx='207' cy='105' r='4'/%3E%3Ccircle cx='182' cy='978' r='4'/%3E%3Ccircle cx='1756' cy='166' r='4'/%3E%3Ccircle cx='1764' cy='151' r='4'/%3E%3C/g%3E%3C/svg%3E");background-size:100% 100%;pointer-events:none}
+.masthead{border-bottom:1px solid var(--ci-line)}
+.brand{font-family:VT323,monospace;letter-spacing:4px;font-weight:400}
+.edition,.eyebrow,.panel-top,.phase-label,.rule span{font-family:VT323,monospace;color:var(--ci-label)}
+.edition{font-size:25px;letter-spacing:2px}.eyebrow{font-size:28px;letter-spacing:3px;margin-bottom:12px}
+h1{font-family:var(--ci-ui);font-size:76px;font-weight:700;line-height:1.15;color:var(--ci-heading);letter-spacing:-1px}
+.machine-panel{border:1px solid var(--ci-line);border-radius:14px;background:var(--ci-panel);box-shadow:0 10px 30px rgba(0,0,0,.3);overflow:hidden}
+.panel-top{border-bottom:1px solid var(--ci-line);font-size:23px;padding:17px 22px}
+.illustration>svg{font-family:var(--ci-ui)}
+.machine-caption{font-size:23px;color:var(--ci-soft);gap:30px;padding:16px 22px}
+.key i{border-radius:2px}
+.phase-number{font-family:VT323,monospace;color:var(--ci-label);font-size:74px}
+.phase-label{font-size:26px;letter-spacing:2px}
+.phase h2{font-family:var(--ci-ui);font-size:52px;font-weight:650;line-height:1.16;letter-spacing:-.6px;margin:15px 0 22px}
+.phase p{font-size:30px;line-height:1.5;color:var(--ci-soft)}
+.rule{border-left:3px solid #e8a030;padding-left:22px}.rule span{color:#e8a030;font-size:23px}
+.rule p{font-size:28px;line-height:1.4;color:var(--ci-soft)}
+footer{font-size:20px;line-height:1.4;color:var(--ci-soft);letter-spacing:.3px}
+.progress{background:var(--ci-line);height:3px;min-height:3px}.progress div{background:#6b8db8}
+.iso{--anatomy-page:#14110e;--anatomy-card:#231d18;--anatomy-paper:#231d18;--anatomy-face:#302820;--anatomy-top:#473b2e;--anatomy-shade-0:#100d0b;--anatomy-shade-1:#231d18;--anatomy-shade-2:#302820;--anatomy-shade-3:#3b3127;--anatomy-hi:#d4c5a9;--anatomy-mid:#a89968;--anatomy-lo:#5f5244;--anatomy-faint:#4f4336;--anatomy-lit:#00bcd4;--anatomy-lit-top:#467d83;--anatomy-lit-shade:#24444b}
+button{border:1px solid var(--ci-strong);border-radius:6px;background:var(--ci-panel);font-size:17px;font-weight:500;padding:11px 16px}
+button:hover,button[aria-pressed=true]{border-color:#6b8db8;color:var(--ci-label);background:#1a3d5c}
+button:focus-visible,input:focus-visible{outline-color:#6b8db8}.controls{font-size:17px;gap:12px}.control-note,#calm-note{font-size:16px;line-height:1.6;color:var(--ci-soft)}
+.web .brand{font-size:38px}.web .edition{font-size:18px}.web .eyebrow{font-size:23px}.web h1{font-size:44px;line-height:1.2}.web .panel-top{font-size:19px}.web .phase h2{font-size:34px;line-height:1.2}.web .phase p,.web .rule p{font-size:20px;line-height:1.5}.web .phase-label{font-size:21px}.web .machine-caption{font-size:16px}.web footer{font-size:14px}.web .phase-stack{min-height:290px}
+.web.embedded .phase h2{font-size:27px;line-height:1.25;margin:6px 0}.web.embedded .phase p{font-size:17px;line-height:1.5}.web.embedded .phase-label{font-size:19px}.web.embedded .phase-stack{min-height:160px}.web.embedded footer{font-size:12px}
+@media(max-width:700px){.web h1{font-size:32px;letter-spacing:-.5px}.web .machine-panel{border-width:1px;box-shadow:none}.web .panel-top{font-size:16px}.web .machine-caption{font-size:14px}.web .phase h2{font-size:30px}.web .phase p,.web .rule p{font-size:18px}.web .phase-stack{min-height:210px}.web footer{font-size:12px}.steps button{font-size:15px;padding:10px}.controls{font-size:16px}.web.embedded .phase h2{font-size:23px;letter-spacing:-.3px}.web.embedded .phase p{font-size:16px}.web.embedded .phase-stack{min-height:172px}.web.embedded .phase{grid-template-columns:42px 1fr;column-gap:10px}.web.embedded .phase-number{font-size:38px}}
